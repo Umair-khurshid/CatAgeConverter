@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cat Age to Human Age Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Cat Age to Human Age Converter -->
+  <div id="cat-age-converter" class="cat-age-converter">
+    <h2>Cat Age to Human Age Converter</h2>
+    <img
+      src="images/cat-age-to-human-age-converter.svg"
+      alt="Cat Age to Human Age Converter"
+      class="cat-converter-image"
+    />
+    <p>Use the slider or enter the age below to find out your cat's age in human years:</p>
+
+    <!-- Slider Input -->
+    <div class="slider-container">
+      <input
+        type="range"
+        id="catAgeSlider"
+        min="0"
+        max="20"
+        value="0"
+        step="1"
+        aria-label="Cat age slider"
+        oninput="updateCatAge()"
+        class="cat-slider"
+      />
+      <div id="sliderTooltip" class="slider-tooltip">0</div>
+    </div>
+
+    <!-- Manual Input -->
+    <div class="manual-input-container">
+      <label for="catAgeInput" class="input-label">Enter Cat Age (years):</label>
+      <input
+        type="number"
+        id="catAgeInput"
+        min="0"
+        max="20"
+        step="1"
+        value="0"
+        aria-label="Enter cat age manually"
+        oninput="updateCatAgeFromInput()"
+        class="cat-age-input"
+      />
+    </div>
+
+    <!-- Display Human Age -->
+    <div class="human-age-display">
+      <h3>Equivalent Human Age: <span id="humanAgeDisplay">0</span> years</h3>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
