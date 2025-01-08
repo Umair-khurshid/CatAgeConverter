@@ -8,4 +8,4 @@ This project is a simple and fun tool to calculate your cat's age in human years
 - Automatic human age calculation based on a predefined mapping
 
 ## Preview
-Try it out here: [Cat Age to Human Age Converter](https://your-github-username.github.io/cat-age-converter/)
+Try it out here: [Cat Age to Human Age Converter](https://whyarecatssocute.com/discover-your-cats-human-age/)
